@@ -7,7 +7,7 @@ body {
 }
 
 .layout_padding {
-  padding: 90px 0;
+  padding: 90px 0px;
 }
 
 .layout_padding2 {
@@ -108,7 +108,7 @@ a:focus {
 
 .header_section .header_top {
   padding: 15px 0;
-  background-color: #04233b;
+  background-color: black;
 }
 
 .header_section .header_top .contact_nav {
@@ -176,8 +176,9 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 20px;
-  color: #000000;
+  color: white;
   text-align: center;
+  font-size: 20px;
   text-transform: uppercase;
   border-radius: 5px;
   -webkit-transition: all .3s;
@@ -185,7 +186,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #0a97b0;
+  color: dark;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -216,7 +217,7 @@ a:focus {
   display: block;
   width: 35px;
   height: 4px;
-  background-color: #000000;
+  background-color: #004460 ;
   margin: 7px 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;

@@ -1,5 +1,8 @@
 import React from 'react';
 import "./Navbar.css"
+
+import Logo from "./Images/jm-main-logo.png"
+
 const Navbar = () => {
   return (
     <header className="header_section">
@@ -9,7 +12,7 @@ const Navbar = () => {
             <a href="">
               <i className="fa fa-phone" aria-hidden="true"></i>
               <span>
-                Call : +91 9398895448
+                Call : +91 000000000
               </span>
             </a>
             <a href="">
@@ -27,12 +30,17 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="header_bottom">
+  
         <div className="container-fluid">
-          <nav className="navbar navbar-expand-lg custom_nav-container bg-warning shadow-lg w-100 ">
-            <a className="navbar-brand" href="index.html">
+          <nav className="navbar navbar-expand-lg custom_nav-container w-100" style={{backgroundColor:"black"}}>
+           
+      
+
+           
+            <a className="navbar-brand" href="index">
               <span>
-                NSDT
+             
+              <img src={Logo} alt="" className='img-thumbnail' style={{width:"600px",height:"100px"}} />       
               </span>
             </a>
 
@@ -40,33 +48,32 @@ const Navbar = () => {
               <span className=""> </span>
             </button>
 
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav">
+            <div className="collapse navbar-collapse shadow" id="navbarSupportedContent">
+              <ul className="navbar-nav me-1">
                 <li className="nav-item active">
-                  <a className="nav-link" href="index.html">Home </a>
+                  <a className="nav-link  btn-dark text-white rounded-5 rounded-pill" href="index">Home </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="service.html">Services</a>
+                  <a className="nav-link  btn-dark text-white rounded-5 rounded-pill" href="service">Services</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="about.html"> About</a>
+                  <a className="nav-link  btn-dark text-white rounded-5 rounded-pill" href="about"> About</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="contact.html">Contact Us</a>
+                  <a className="nav-link  btn-dark text-white rounded-5 rounded-pill" href="contact">Contact Us</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#"> <i className="fa fa-user" aria-hidden="true"></i> Login</a>
+                  <a className="nav-link  btn-dark text-white rounded-5 rounded-pill" href="#"> <i className="fa fa-user" aria-hidden="true"></i> Login</a>
                 </li>
-                <form className="form-inline">
-                  <button className="btn my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i className="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
+               
+
+            
               </ul>
+         
             </div>
           </nav>
         </div>
-      </div>
+
     </header>
   );
 };
