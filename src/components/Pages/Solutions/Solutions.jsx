@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+
 import { FaArrowRight } from "react-icons/fa";
 import sol1 from "./images/sol1.png"
 import sol2 from "./images/sol2.png"

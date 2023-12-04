@@ -6,6 +6,60 @@ const Contact = () => {
   return (
     <>
       <section className="contact_section layout_padding-top">
+
+
+
+
+      <div className="container-fluid mt-5">
+          <div className="container mt-4">
+            <h2>
+              Contact <strong style={{ color: "#0a97b0" }}>Information </strong>{" "}
+            </h2>
+            <table className="table table-bordered shadow border-5 table-borderless table-responsive">
+              <tbody className="">
+                <tr>
+                  <th scope="row">Company Name</th>
+                  <td>Nhava Sheva Distribution Terminal Private Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    Address (Shallow Water Berths and Coastal Berth)
+                  </th>
+                  <td>
+                    Jawaharlal Nehru Port Authority, Nhava Sheva, Uran, Navi
+                    Mumbai 400 707, Maharashtra
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Phone</th>
+                  <td>+91 98703 00093</td>
+                </tr>
+                <tr>
+                  <th scope="row">Email</th>
+                  <td>
+                    <a href="mailto:ops-nsdt@jmbaxi.com">ops-nsdt@jmbaxi.com</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Registered Address</th>
+                  <td>
+                    Nhava Sheva Distribution Terminal Private Limited, Godrej
+                    Coliseum, office no. 801, 8th floor, ‘C’ wing, Everard
+                    Nagar, Sion east, Mumbai 400 022, Maharashtra
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">CIN</th>
+                  <td>CINU63023MH2022PTC392812</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+
+        
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-4 col-md-5 offset-md-1">
@@ -58,41 +112,7 @@ const Contact = () => {
           </div>
         </div>
 
-
-
-        <div className="container-fluid mt-5">
-        <div className="container mt-4">
-      <h2 >Contact  <strong style={{color:"#0a97b0"}}>Information </strong> </h2>
-      <table className="table table-bordered shadow border-5 table-borderless table-responsive">
-        <tbody className="">
-          <tr>
-            <th scope="row">Company Name</th>
-            <td>Nhava Sheva Distribution Terminal Private Limited</td>
-          </tr>
-          <tr>
-            <th scope="row">Address (Shallow Water Berths and Coastal Berth)</th>
-            <td>Jawaharlal Nehru Port Authority, Nhava Sheva, Uran, Navi Mumbai 400 707, Maharashtra</td>
-          </tr>
-          <tr>
-            <th scope="row">Phone</th>
-            <td>+91 98703 00093</td>
-          </tr>
-          <tr>
-            <th scope="row">Email</th>
-            <td><a href="mailto:ops-nsdt@jmbaxi.com">ops-nsdt@jmbaxi.com</a></td>
-          </tr>
-          <tr>
-            <th scope="row">Registered Address</th>
-            <td>Nhava Sheva Distribution Terminal Private Limited, Godrej Coliseum, office no. 801, 8th floor, ‘C’ wing, Everard Nagar, Sion east, Mumbai 400 022, Maharashtra</td>
-          </tr>
-          <tr>
-            <th scope="row">CIN</th>
-            <td>CINU63023MH2022PTC392812</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-        </div>
+       
       </section>
     </>
   );

@@ -3,11 +3,14 @@ import "./Navbar.css"
 
 import Logo from "./Images/jm-main-logo.png"
 
+
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
   return (
     <header className="header_section">
       <div className="header_top">
-        <div className="container-fluid">
+        <div className="container-fluid ">
           <div className="contact_nav">
             <a href="">
               <i className="fa fa-phone" aria-hidden="true"></i>
@@ -31,7 +34,7 @@ const Navbar = () => {
         </div>
       </div>
   
-        <div className="container-fluid">
+        <div className="container-fluid  ">
           <nav className="navbar navbar-expand-lg custom_nav-container w-100" style={{backgroundColor:"black"}}>
            
       
@@ -51,19 +54,24 @@ const Navbar = () => {
             <div className="collapse navbar-collapse shadow" id="navbarSupportedContent">
               <ul className="navbar-nav me-1">
                 <li className="nav-item active">
-                  <a className="nav-link  btn-dark text-white rounded-5 rounded-pill" href="index">Home </a>
+                  <Link className="nav-link  btn-dark text-warning rounded-5 rounded-pill"   to='/'>Home </Link>
+                </li>
+              
+                <li className="nav-item">
+                  <Link className="nav-link  btn-dark text-warning rounded-5 rounded-pill" to='/about-us' > About</Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link className="nav-link  btn-dark text-warning rounded-5 rounded-pill" to='/services'>Services</Link>
+                </li>
+
+
+                
+                <li className="nav-item">
+                  <Link className="nav-link  btn-dark text-warning rounded-5 rounded-pill" to='/contact'>Contact Us</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link  btn-dark text-white rounded-5 rounded-pill" href="service">Services</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link  btn-dark text-white rounded-5 rounded-pill" href="about"> About</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link  btn-dark text-white rounded-5 rounded-pill" href="contact">Contact Us</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link  btn-dark text-white rounded-5 rounded-pill" href="#"> <i className="fa fa-user" aria-hidden="true"></i> Login</a>
+                  <Link className="nav-link  btn-dark text-warning rounded-5 rounded-pill"  to='/login'> <i className="fa fa-user" aria-hidden="true"></i> Login</Link>
                 </li>
                
 

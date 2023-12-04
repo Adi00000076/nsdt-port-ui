@@ -3,6 +3,9 @@ import "./Aboutus.css";
 import Abus from "./images/about-img.png";
 import Track from "./images/track-bg.jpg";
 
+// import information form next folder line 
+import Information from "./Information/Information";
+
 const AboutUs = () => {
   return (
     <>
@@ -63,6 +66,9 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
+
+
+        <Information />
       </section>
     </>
   );

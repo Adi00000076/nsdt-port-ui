@@ -2,6 +2,8 @@ import React from "react";
 
 import "./Loginpage.css";
 
+import { Link } from "react-router-dom";
+
 const Loginpage = () => {
   return (
  
@@ -54,12 +56,12 @@ const Loginpage = () => {
                           </label>
                         </div>
                         <div className="text-center ">
-                          <button
+                          <Link target="_blank" to='http://99.99.99.41/NSDT/login?dswid=723'
                             className="btn btn-secondary btn-block fa-lg gradient-custom-2 "
                             type="button"
                           >
                             Log in
-                          </button>
+                          </Link>
                           <a className="text-muted" href="#!">
                             Forgot password?
                           </a>

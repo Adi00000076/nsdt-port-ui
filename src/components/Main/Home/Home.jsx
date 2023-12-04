@@ -2,7 +2,11 @@ import React from "react";
 import { FaTwitter, FaFacebook, FaInstagram, FaDribbble } from "react-icons/fa";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
-import { colors } from "@mui/material";
+
+
+import { Link } from "react-router-dom";
+
+
 
 const Home = () => {
   return (
@@ -16,24 +20,26 @@ const Home = () => {
               alt=""
             />
             <div className="overlay">
-              <h2 className="text-light"  style={{fontSize:"25px"}}>Marine Services</h2>
+              <h2 className="text-light" style={{ fontSize: "25px" }}>
+                Marine Services
+              </h2>
               <p className="set1">
-                <a href="#" className="text-light">
+                <Link to='/' className="text-light">
                   <FaTwitter />
-                </a>
-                <a href="#" className="text-light">
+                </Link>
+                <Link to='/' className="text-light">
                   <FaFacebook />
-                </a>
+                </Link>
               </p>
               <hr />
               <hr />
               <p className="set2">
-                <a href="#" className="text-light">
+                <Link to='/' className="text-light">
                   <FaInstagram />
-                </a>
-                <a href="#" className="text-light">
+                </Link>
+                <Link to='/' className="text-light">
                   <FaDribbble />
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -47,24 +53,26 @@ const Home = () => {
               alt=""
             />
             <div className="overlay">
-              <h2 className="text-light" style={{fontSize:"25px"}}>Ports & Logistics</h2>
+              <h2 className="text-light" style={{ fontSize: "25px" }}>
+                Ports & Logistics
+              </h2>
               <p className="set1">
-                <a href="#" className="text-light">
+                <Link to='/' className="text-light">
                   <FaTwitter />
-                </a>
-                <a href="#" className="text-light">
+                </Link>
+                <Link to='/' className="text-light">
                   <FaFacebook />
-                </a>
+                </Link>
               </p>
               <hr />
               <hr />
               <p className="set2">
-                <a href="#" className="text-light">
+                <Link to='/' className="text-light">
                   <FaInstagram />
-                </a>
-                <a href="#" className="text-light">
+                </Link>
+                <Link to='/' className="text-light">
                   <FaDribbble />
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -78,24 +86,26 @@ const Home = () => {
               alt=""
             />
             <div className="overlay">
-              <h2 className="text-light" style={{fontSize:"25px"}}>Technologies</h2>
+              <h2 className="text-light" style={{ fontSize: "25px" }}>
+                Technologies
+              </h2>
               <p className="set1">
-                <a href="#" className="text-light">
+                <Link to='/' className="text-light">
                   <FaTwitter />
-                </a>
-                <a href="#" className="text-light">
+                </Link>
+                <Link to='/' className="text-light">
                   <FaFacebook />
-                </a>
+                </Link>
               </p>
               <hr />
               <hr />
               <p className="set2">
-                <a href="#" className="text-light">
+                <Link to='/' className="text-light">
                   <FaInstagram />
-                </a>
-                <a href="#" className="text-light">
+                </Link>
+                <Link to='/' className="text-light">
                   <FaDribbble />
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -105,18 +115,17 @@ const Home = () => {
           <h5 className="fw-bold ">
             Welcome to <br />
             <Typewriter
-  options={{
-    strings: [
-      '<span style="color: teal;fontSize:40px">J M BAX</span>',
-      '<span style="color: 	#00BCD4; fontSize:40px"">group</span>',
-    ],
-    autoStart: true,
-    loop: true,
-    delay: 50, 
-    wrapperClassName: 'typewriter-wrapper', 
-  }}
-/>
-
+              options={{
+                strings: [
+                  '<span style="color: teal;fontSize:40px">J M BAX</span>',
+                  '<span style="color: 	#00BCD4; fontSize:40px"">group</span>',
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 50,
+                wrapperClassName: "typewriter-wrapper",
+              }}
+            />
           </h5>
 
           <p className="text-muted text-white">
@@ -124,13 +133,15 @@ const Home = () => {
             conglomerate, in marine services, ports and logistics and
             technology. Our professionally managed companies span the entire
             logistics services value chain including port facilities such as
-            container and multi-cargo port terminals, container freight
-            stations and inland container depots, niche logistics services for
-            project and bulk cargo, offshore installations and ship agency
-            services.
+            container and multi-cargo port terminals, container freight stations
+            and inland container depots, niche logistics services for project
+            and bulk cargo, offshore installations and ship agency services.
           </p>
         </div>
       </div>
+
+
+ 
     </div>
   );
 };

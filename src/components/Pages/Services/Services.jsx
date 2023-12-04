@@ -77,7 +77,7 @@ const Services = () => {
 const ServiceBox = ({ imgSrc, title, description }) => {
   return (
     <>
-      <div className="col-md-6">
+      <div className="col-sm-12">
         <div className="box">
           <div className="img-box">
             <img src={imgSrc} alt={title} />

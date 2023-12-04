@@ -10,6 +10,9 @@ import port from "./port.mp4"
 const Header = () => {
   return (
     <>
+
+
+
       <div
         id="carouselExampleDark"
         className="carousel carousel-dark slide"
@@ -112,7 +115,12 @@ const Header = () => {
         </button>
       </div>
 
+
+
       <Home />
+
+      
+<ReactPlayer url={"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"} />
     </>
   );
 };
