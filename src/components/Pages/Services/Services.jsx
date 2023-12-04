@@ -1,13 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import "./Services.css"
+import "./Services.css";
 
-import s1 from "../Services/images/s1.png"
-import s2 from "../Services/images/s2.png"
-import s3 from "../Services/images/s3.png"
-import s4 from "../Services/images/s4.png"
-import s5 from "../Services/images/s5.png"
-import s6 from "../Services/images/s6.png"
+import Features from "../Features/Features";
+
+import s1 from "../Services/images/s1.png";
+import s2 from "../Services/images/s2.png";
+import s3 from "../Services/images/s3.png";
+import s4 from "../Services/images/s4.png";
+import s5 from "../Services/images/s5.png";
+import s6 from "../Services/images/s6.png";
+
 
 const Services = () => {
   return (
@@ -18,9 +21,7 @@ const Services = () => {
             <h2>
               Our <span>Services</span>
             </h2>
-            <p>
-            Digital Solutions for Operations and Service Management
-            </p>
+            <p>Digital Solutions for Operations and Service Management</p>
           </div>
           <div className="row">
             <ServiceBox
@@ -44,63 +45,52 @@ const Services = () => {
               description="Crew Management System is a software solution that can be used by train operators, train operator shunters, crew controllers, line supervisors, depot crew controllers, station managers, station controllers,depot managers, chief traffic controllers, operation schedulers, and trainoperators."
             />
 
-
-<ServiceBox
+            <ServiceBox
               imgSrc={s5}
               title="PCS MSW Customer Portalst"
               description="Maritime Single Window to Discover the Future of Maritime Efficiency. Don't let complex procedures and time-consuming paperwork hold your port operations back. Embrace the power of our Maritime Single Window solution."
             />
 
-
-
-
-<ServiceBox
+            <ServiceBox
               imgSrc={s6}
               title="Crew & Labor Management System"
               description="Crew Management System is a software solution that can be used by train operators, train operator shunters, crew controllers, line supervisors, depot crew controllers, station managers, station controllers,depot managers, chief traffic controllers, operation schedulers, and trainoperators."
             />
 
-
-
-
-<ServiceBox
+            <ServiceBox
               imgSrc={s4}
               title="WMS TMS"
               description="Our warehouse management solution optimizes inventory control, order processing, and storage efficiency. It streamlines operations,reduces errors, and enhances productivity. Features include inventory tracking,real-time data, and order fulfillment automation.."
             />
-
-
-
-
-
-            
-
           </div>
         </div>
       </div>
-    
+
+      
+      <Features />
     </section>
+
+    
   );
 };
 
 const ServiceBox = ({ imgSrc, title, description }) => {
   return (
-   <>
-   
-   <div className="col-md-6">
-      <div className="box">
-        <div className="img-box">
-          <img src={imgSrc} alt={title} />
-        </div>
-        <div className="detail-box">
-          <h5>{title}</h5>
-          <p>{description}</p>
-          <a href="#">Read More</a>
+    <>
+      <div className="col-md-6">
+        <div className="box">
+          <div className="img-box">
+            <img src={imgSrc} alt={title} />
+          </div>
+          <div className="detail-box">
+            <h5>{title}</h5>
+            <p>{description}</p>
+            <a href="#">Read More</a>
+          </div>
         </div>
       </div>
-    </div>
 
-   </>
+    </>
   );
 };
 

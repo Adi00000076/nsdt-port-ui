@@ -1,76 +1,90 @@
-import React, { useState } from 'react';
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import React from 'react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
-
-
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    slidesToSlide: 3 
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 2 
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1 
+  }
+};
 
 const Client = () => {
-  const [currentItem, setCurrentItem] = useState(0);
-
-  const handlePrev = () => {
-    setCurrentItem(currentItem === 0 ? 3 : currentItem - 1);
-  };
-
-  const handleNext = () => {
-    setCurrentItem(currentItem === 3 ? 0 : currentItem + 1);
-  };
-
   return (
-    <>
-      <section className="client_section layout_padding">
-        <div className="container">
-          <div className="heading_container">
-            <h2>
-              What Says Our <span>Client</span>
-            </h2>
-          </div>
-          <div className="client_container">
-            <div className="carousel-wrap ">
-              <OwlCarousel
-                className="owl-carousel"
-                items={1}
-                loop
-                nav
-                onChanged={(e) => setCurrentItem(e.item.index)}
-              >
-                {/* Your existing carousel items */}
-              </OwlCarousel>
-            </div>
-            <div className="carousel-buttons">
-              <button onClick={handlePrev}>Previous</button>
-              <button onClick={handleNext}>Next</button>
-            </div>
-            <div className="selected-client-details">
-              <div className="box">
-                <div className="detail-box">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor
-                    sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim
-                  </p>
-                </div>
-                <div className="client_id">
-                  <div className="img-box">
-                    <img
-                      src={currentItem === 0 || currentItem === 2 ? 'images/client-1.png' : 'images/client-2.png'}
-                      alt=""
-                      className="img-1"
-                    />
-                  </div>
-                  <div className="name">
-                    <h6>Adipiscing</h6>
-                    <p>Magna</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+    <Carousel
+      swipeable={false}
+      draggable={false}
+      showDots={true}
+      responsive={responsive}
+      ssr={true} 
+      infinite={true}
+      autoPlay={false} 
+      autoPlaySpeed={1000}
+      keyBoardControl={true}
+      customTransition="all .5"
+      transitionDuration={500}
+      containerClass="carousel-container"
+      removeArrowOnDeviceType={['tablet', 'mobile']}
+      dotListClass="custom-dot-list-style"
+      itemClass="carousel-item-padding-40-px"
+    >
+
+<div className="card" style={{width: '18rem'}}>
+  <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="card-img-top" alt="..." />
+  <div className="card-body">
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+
+<div className="card" style={{width: '18rem'}}>
+  <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="card-img-top" alt="..." />
+  <div className="card-body">
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+
+<div className="card" style={{width: '18rem'}}>
+  <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="card-img-top" alt="..." />
+  <div className="card-body">
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+
+
+<div className="card" style={{width: '18rem'}}>
+  <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="card-img-top" alt="..." />
+  <div className="card-body">
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+
+
+<div className="card" style={{width: '18rem'}}>
+  <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="card-img-top" alt="..." />
+  <div className="card-body">
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+
+
+
+    </Carousel>
   );
 };
 
