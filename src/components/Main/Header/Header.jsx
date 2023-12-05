@@ -1,9 +1,10 @@
-import Home from "../Home/Home";
+
 import React from "react";
 
 import "./Header.css"
 
 import ReactPlayer from 'react-player/lazy'
+import Home from "../Home/Home";
 
 
 
@@ -48,15 +49,15 @@ const Header = () => {
 
 
             <div className="carousel-caption d-none d-md-block">
-              <h5>MANAGE COMPLEXITY WITH EASE</h5>
-              <p>
+              <h5 className="text-warning display-5 fw-bold text-bg-info">MANAGE COMPLEXITY WITH EASE</h5>
+              <p className="text-dark fw-bold fa-2x">
                 Multiple stakeholders, complex operations, racing againsttime,
                 Solutions to manage complex operations with ease.
               </p>
             </div>
             <img
               style={{ height: "450px" }}
-              src="https://themewagon.github.io/logistica/img/carousel-1.jpg "
+              src="https://cdn.dribbble.com/users/4346208/screenshots/15690883/media/43e2fc2d96fee90fee295174392b71c1.gif"
               className="d-block w-100"
               alt="..."
             />
@@ -69,13 +70,13 @@ const Header = () => {
           <div className="carousel-item" data-bs-interval={2000}>
             <img
               style={{ height: "450px" }}
-              src="https://themewagon.github.io/logistica/img/carousel-2.jpg"
+              src="https://www.shipengine.com/wp-content/uploads/Supply-Chain-Crisis.png"
               className="d-block w-100"
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>WE PROVIDE BEST TRANSPORT SERVICE</h5>
-              <p>
+              <h5 className="text-warning display-5 fw-bold text-bg-info">WE PROVIDE BEST TRANSPORT SERVICE</h5>
+              <p className="text-dark fw-bold fa-2x">
                 Some representative placeholder content for the second slide.
               </p>
             </div>
@@ -83,13 +84,13 @@ const Header = () => {
           <div className="carousel-item">
             <img
               style={{ height: "450px" }}
-              src="https://img.freepik.com/premium-photo/transportation-logistics-container-cargo-ship-cargo-plane-3d-rendering-illustration_37416-487.jpg?w=900"
+              src="https://ars.els-cdn.com/content/image/1-s2.0-S0307904X04001167-gr1.jpg"
               className="d-block w-100"
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>The fastest way of Deliver Your Container</h5>
-              <p>
+              <h5 className="text-warning display-5 fw-bold text-bg-info">The fastest way of Deliver Your Container</h5>
+              <p className="text-dark fw-bold fa-2x">
                 Some representative placeholder content for the third slide.
               </p>
             </div>
@@ -117,7 +118,7 @@ const Header = () => {
 
 
 
-      <Home />
+    <Home />
 
       
      

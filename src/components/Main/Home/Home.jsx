@@ -129,7 +129,7 @@ const Home = () => {
           </h5>
 
           <p className="text-muted text-white">
-            J M BAXI prides itself in being a 106-year-old business
+          <strong className="text-warning text-decoration-underline">   J M BAXI </strong>prides itself in being a 106-year-old business
             conglomerate, in marine services, ports and logistics and
             technology. Our professionally managed companies span the entire
             logistics services value chain including port facilities such as

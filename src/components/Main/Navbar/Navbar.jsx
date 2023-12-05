@@ -43,7 +43,7 @@ const Navbar = () => {
             <a className="navbar-brand" href="index">
               <span>
              
-              <img src={Logo} alt="" className='img-thumbnail' style={{width:"600px",height:"100px"}} />       
+              <img src={Logo} alt="" className='img-thumbnail' style={{width:"600px",height:"100px",border:"5px solid gold"}} />       
               </span>
             </a>
 
