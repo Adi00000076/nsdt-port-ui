@@ -1,11 +1,11 @@
 import Home from "../Home/Home";
 import React from "react";
 
+import "./Header.css"
 
 import ReactPlayer from 'react-player/lazy'
 
 
-import port from "./port.mp4"
 
 const Header = () => {
   return (
@@ -120,7 +120,23 @@ const Header = () => {
       <Home />
 
       
-<ReactPlayer url={"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"} />
+     
+
+      <div className="container-fluid">
+          <div className="row">
+            <div className="col">
+              <div className="reactplayer-wrapper">
+                <ReactPlayer
+                  url={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4'}
+                  className="reactplayer"
+                  width="100%"
+                  height="50%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+     
     </>
   );
 };
