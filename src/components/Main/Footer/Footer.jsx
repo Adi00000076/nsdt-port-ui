@@ -118,8 +118,8 @@ const Footer = () => {
       <p>
         © <span id="displayYear" />  Copyright 2023, J M Baxi Group, All rights reserved.
         <a href="https://www.jmbaxi.com/sitemap.html">   | Web design by Image Online. | </a>
-    NSDT
-        <a href="https://www.jmbaxi.com/sitemap.html">Site Map</a>
+    NSDT 
+        <a href="https://www.jmbaxi.com/sitemap.html"> Map</a>
       </p>
     </div>
   </section>
