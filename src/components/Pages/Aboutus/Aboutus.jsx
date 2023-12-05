@@ -6,9 +6,13 @@ import Track from "./images/track-bg.jpg";
 // import information form next folder line 
 import Information from "./Information/Information";
 
+import Zoom from 'react-reveal/Zoom';
+
 const AboutUs = () => {
   return (
     <>
+
+    <Zoom top>
       <section className="about_section layout_padding">
         <div className="container">
           <div className="row">
@@ -69,7 +73,9 @@ const AboutUs = () => {
 
 
         <Information />
-      </section>
+
+     
+      </section>   </Zoom>
     </>
   );
 };

@@ -3,11 +3,15 @@ import React from 'react'
 import "./Features.css"
 import Facts from '../Facts-clinets/Facts'
 
+
+import Bounce from 'react-reveal/Bounce';
+
+
 const Features = () => {
   return (
     <React.Fragment>
 
-
+<Bounce  left>
 
 <div className="container-fluid overflow-hidden py-5 px-lg-0">
   <div className="container feature py-5 px-lg-0">
@@ -50,7 +54,7 @@ const Features = () => {
 </div>
 
 <Facts />
-      
+</Bounce>
     </React.Fragment>
   )
 }

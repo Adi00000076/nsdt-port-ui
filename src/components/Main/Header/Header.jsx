@@ -6,6 +6,7 @@ import "./Header.css"
 import ReactPlayer from 'react-player/lazy'
 import Home from "../Home/Home";
 
+import Zoom from 'react-reveal/Zoom';
 
 
 const Header = () => {
@@ -122,7 +123,7 @@ const Header = () => {
 
       
      
-
+<Zoom  bottom>
       <div className="container-fluid">
           <div className="row">
             <div className="col">
@@ -137,7 +138,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-     
+        </Zoom>
     </>
   );
 };

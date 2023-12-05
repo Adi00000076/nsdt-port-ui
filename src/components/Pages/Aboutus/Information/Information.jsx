@@ -10,11 +10,15 @@ import { MdOutlineWork } from "react-icons/md";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import { GiIronHulledWarship } from "react-icons/gi";
 
+import Zoom from 'react-reveal/Zoom';
+
 const Information = () => {
   
 
   return (
     <>
+<Zoom top >
+
     <div className="container-fluid">
         <div className="row mt-5">
             <div className="col">
@@ -179,7 +183,7 @@ With the growing market for niche logistics services for last-mile deliveries, a
 
       </div>
         </div>
-    </div>
+    </div></Zoom>
     </>
   );
 };

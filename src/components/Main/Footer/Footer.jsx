@@ -16,8 +16,7 @@ const Footer = () => {
       
 <div> 
 
-  <br />
-  <br /> <br /> <br /> <br /> <br /> <br /> <br />
+
   <section className="info_section layout_padding2 mt-5">
     <div className="container">
       <div className="row">
